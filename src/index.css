@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* scrollbar styling */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(114, 113, 113);
+    border-radius: 10px;
+    height: 200px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+    background-color: #ccc;
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.overflow{
+  overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    height: 200px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  @media screen and (max-width:460px) {
+
+    .grid-col-mob{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (max-width:421px) {
+    .heading{
+      font-size: 2.5rem;
+    }
+    .exercise-grid{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (max-width:360px) {
+    .grid-col{
+      grid-template-columns: 1fr;
+    }
+  }
